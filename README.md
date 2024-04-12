@@ -6,23 +6,23 @@ In the context of deltaV, we've integrated an agent that leverages AI to generat
 
 To interact with the APIs, set up the necessary URLs and keys:
 
-\`\`\`python
-API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
+```python
+API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"\n
 IMG_BB_API_URL = "https://api.imgbb.com/1/upload"
 IMG_BB_API_KEY = "your_imgbb_api_key_here"  # Replace with your actual ImgBB API key
 headers = {"Authorization": "Bearer your_huggingface_api_key_here"}  # Replace with your actual Hugging Face API key
-\`\`\`
+```
 
 ## Agent Configuration
 
 Configure the agent responsible for image generation:
 
-\`\`\`python
+```python
 GetImage=Agent(name="GetImage",
                seed="alice recovery phrase",
                mailbox="your_mailbox_id@https://agentverse.ai",  # Replace with your actual mailbox ID
 )
-\`\`\`
+```
 
 ## Sample Images
 
