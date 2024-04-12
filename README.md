@@ -1,4 +1,4 @@
-# Image Generation in deltaV using Text Descriptions
+# Image Generation in uagent and deltaV using Text Descriptions
 
 In the context of deltaV, we've integrated an agent that leverages AI to generate images directly from text inputs. This agent uses the `stabilityai/stable-diffusion-xl-base-1.0` API for image generation and `imgbb` for temporary image storage.
 
