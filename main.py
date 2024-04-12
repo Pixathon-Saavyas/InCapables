@@ -2,7 +2,7 @@ from uagents import Agent, Context, Protocol, Model, Bureau
 from pydantic import Field
 from ai_engine import UAgentResponse, UAgentResponseType
 import requests
-
+import random
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 IMG_BB_API_URL = "https://api.imgbb.com/1/upload"
 IMG_BB_API_KEY = "fc7ab5d3266f57af3386855f4d93bac7"  # Replace with your actual ImgBB API key
