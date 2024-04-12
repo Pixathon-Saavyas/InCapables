@@ -40,5 +40,3 @@ The generated images are displayed with the following fields:
 - **Image URL**: Direct link to the generated image
 - **Generation Parameters**: Text description used, model settings, etc.
 - **Temporary Storage Link**: Link to the image stored temporarily on ImgBB
-
-(Note: Include actual outputs or mockups of the output fields.)
