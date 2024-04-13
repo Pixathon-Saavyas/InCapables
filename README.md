@@ -10,7 +10,7 @@ To interact with the APIs, set up the necessary URLs and keys:
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 IMG_BB_API_URL = "https://api.imgbb.com/1/upload"
 IMG_BB_API_KEY = "your_imgbb_api_key_here"  # Replace with your actual ImgBB API key
-headers = {"Authorization": "Bearer your_huggingface_api_key_here"}  # Replace with your actual Hugging Face API key
+data={'key': IMG_BB_API_KEY}
 ```
 
 ## Agent Configuration
