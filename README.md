@@ -7,10 +7,10 @@ In the context of deltaV, we've integrated an agent that leverages AI to generat
 To interact with the APIs, set up the necessary URLs and keys:
 
 ```python
-API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
-IMG_BB_API_URL = "https://api.imgbb.com/1/upload"
-IMG_BB_API_KEY = "your_imgbb_api_key_here"  # Replace with your actual ImgBB API key
-data={'key': IMG_BB_API_KEY}
+AGENT_MAILBOX_KEY =os.getenv("AGENT_MAILBOX_KEY")#get the key from agentverse
+IMG_BB_API_URL = "https://api.imgbb.com/1/upload"#get the url from your imgbb
+IMG_BB_API_KEY = os.getenv("IMG_BB_KEY")#get the key from imgbb
+HUGGING_FACE_KEY=os.getenv("HUGGING_FACE_KEY")#get the key from Hugging face
 ```
 
 ## Agent Configuration
