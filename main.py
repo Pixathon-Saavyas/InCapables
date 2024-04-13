@@ -4,14 +4,16 @@ from ai_engine import UAgentResponse, UAgentResponseType
 import requests
 from dotenv import load_dotenv
 import os
-
+load_dotenv()
+AGENT_MAILBOX_KEY =os.getenv("AGENT_MAILBOX_KEY")
 API_URL = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0"
 IMG_BB_API_URL = "https://api.imgbb.com/1/upload"
-IMG_BB_API_KEY = "fc7ab5d3266f57af3386855f4d93bac7"
-headers = {"Authorization": "Bearer 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"}
+IMG_BB_API_KEY = os.getenv("IMG_BB_KEY")
+HUGGING_FACE_KEY=os.getenv("HUGGING_FACE_KEY")
+headers = {"Authorization": f"Bearer {HUGGING_FACE_KEY}"}
 GetImage=Agent(name="GetImage",
                 seed="alice recovery phrase",
-                mailbox=f"ad6de0c7-17dc-4979-8988-ead663cd9213@https://agentverse.ai",
+                mailbox=f"{AGENT_MAILBOX_KEY}@https://agentverse.ai",
 )
 def query(payload):
     response = requests.post(API_URL, headers=headers, json=payload)
